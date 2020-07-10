@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Expressive.Performance.Full\Test.cs" Link="Test.cs" />
+    <Compile Include="..\Expressive.Performance.Full\TestRun.cs" Link="TestRun.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExpressiveParser" Version="1.4.3" />
+  </ItemGroup>
+
+</Project>
