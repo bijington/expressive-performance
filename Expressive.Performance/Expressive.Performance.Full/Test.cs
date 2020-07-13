@@ -38,10 +38,11 @@ namespace Expressive.Performance.Shared
             for (var i = 0; i < this.evaluationCount; i++)
             {
                 stopwatch.Start();
-                _ = expression.ReferencedVariables;
+                _ = expression.Evaluate();
                 stopwatch.Stop();
 
                 result.Add(stopwatch.Elapsed);
+                stopwatch.Reset();
             }
 
             return result;
